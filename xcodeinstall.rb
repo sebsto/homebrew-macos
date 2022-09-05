@@ -18,7 +18,7 @@ class Xcodeinstall < Formula
     system "swift", "build",
         "--configuration", "release",
     bin.install '.build/release/xcodeinstall'
-    bin.install 'libSwiftToolsSupport.dylib'
+    bin.install '.build/release/libSwiftToolsSupport.dylib'
   end
   
 end
