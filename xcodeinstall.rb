@@ -14,7 +14,7 @@ class Xcodeinstall < Formula
   # depends_on "cmake" => :build
 
   def install
-    bin.install xcodeinstall
+    bin.install 'xcodeinstall'
   end
   
 end
