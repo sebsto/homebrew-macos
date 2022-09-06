@@ -8,18 +8,20 @@
 class Xcodeinstall < Formula
   desc "A command line tool to download and install Apple's Xcode"
   homepage "https://github.com/sebsto/xcodeinstall"
-  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.1.tar.gz"
-  sha256 "3e8bd9ee37147639560207e6a1d6b0d9de0b60e793fe3bf6702ec8b1b84a771e"
+  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.2.tar.gz"
+  sha256 "fe1c01175493bacd9f8523a475c9d028fb5d8cfb9fd199f6b80c7d3d356cdb58"
   license "Apache-2.0"
 
   # depends_on "cmake" => :build
   
   def install
-    system "swift", "build",
-        "--configuration", "release",
-        "--disable-sandbox"
-    bin.install '.build/release/xcodeinstall'
-    bin.install '.build/release/libSwiftToolsSupport.dylib'
+    # system "swift", "build",
+    #     "--configuration", "release",
+    #     "--disable-sandbox"
+    # bin.install '.build/release/xcodeinstall'
+    # bin.install '.build/release/libSwiftToolsSupport.dylib'
+    bin.install 'dist/xcodeinstall'
+    bin.install 'dist/libSwiftToolsSupport.dylib'
   end
   
 end
