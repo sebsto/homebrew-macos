@@ -2,6 +2,12 @@
 # https://betterprogramming.pub/a-step-by-step-guide-to-create-homebrew-taps-from-github-repos-f33d3755ba74
 # https://medium.com/@mxcl/maintaining-a-homebrew-tap-for-swift-projects-7287ed379324
 
+#
+# To compute the SHA :
+# ➜  mac shasum -a 256 v0.2.tar.gz
+# fe1c01175493bacd9f8523a475c9d028fb5d8cfb9fd199f6b80c7d3d356cdb58  v0.2.tar.gz
+#
+
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
