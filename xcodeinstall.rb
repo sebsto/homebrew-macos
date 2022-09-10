@@ -20,6 +20,9 @@ class Xcodeinstall < Formula
         "--configuration", "release",
         "--disable-sandbox"
     bin.install ".build/release/xcodeinstall"
-    # bin.install 'dist/xcodeinstall'
+  end
+
+  test do
+    assert_equal version.to_s, shell_output("#{bin}/xcodeinstall --version").chomp
   end
 end
