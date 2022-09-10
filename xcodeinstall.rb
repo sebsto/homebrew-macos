@@ -9,7 +9,7 @@
 #
 
 class Xcodeinstall < Formula
-  desc "xcodeinstall is a command-line tool to download and install Apple's Xcode"
+  desc "This is a command-line tool to download and install Apple's Xcode"
   homepage "https://github.com/sebsto/xcodeinstall"
   url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.2.tar.gz"
   sha256 "fe1c01175493bacd9f8523a475c9d028fb5d8cfb9fd199f6b80c7d3d356cdb58"
