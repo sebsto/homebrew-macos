@@ -15,7 +15,7 @@ class Xcodeinstall < Formula
       "--disable-sandbox"
     bin.install ".build/release/xcodeinstall"
   end
-  
+
   test do
     assert_equal version.to_s, shell_output("#{bin}/xcodeinstall --version").chomp
   end
