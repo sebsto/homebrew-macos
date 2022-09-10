@@ -20,9 +20,6 @@ class Xcodeinstall < Formula
         "--configuration", "release",
         "--disable-sandbox"
     bin.install ".build/release/xcodeinstall"
-    bin.install ".build/release/libSwiftToolsSupport.dylib"
     # bin.install 'dist/xcodeinstall'
-    # bin.install 'dist/libSwiftToolsSupport.dylib'
   end
-
 end
