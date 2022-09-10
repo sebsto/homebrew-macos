@@ -21,13 +21,13 @@ class Xcodeinstall < Formula
   # depends_on "cmake" => :build
   
   def install
-    # system "swift", "build",
-    #     "--configuration", "release",
-    #     "--disable-sandbox"
-    # bin.install '.build/release/xcodeinstall'
-    # bin.install '.build/release/libSwiftToolsSupport.dylib'
-    bin.install 'dist/xcodeinstall'
-    bin.install 'dist/libSwiftToolsSupport.dylib'
+    system "swift", "build",
+        "--configuration", "release",
+        "--disable-sandbox"
+    bin.install '.build/release/xcodeinstall'
+    bin.install '.build/release/libSwiftToolsSupport.dylib'
+    # bin.install 'dist/xcodeinstall'
+    # bin.install 'dist/libSwiftToolsSupport.dylib'
   end
   
 end
