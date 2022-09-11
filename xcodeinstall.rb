@@ -10,6 +10,11 @@ class Xcodeinstall < Formula
   license "Apache-2.0"
 
   # insert bottle definition here
+  bottle do
+    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.3"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "2b1a1665b1bc9f307840660a4fdc2df45914642d265b9b3cb507b17206355ba9"
+    sha256 cellar: :any_skip_relocation, monterey: "2b1a1665b1bc9f307840660a4fdc2df45914642d265b9b3cb507b17206355ba9"
+  end
 bottle do
   root_url "https://github.com/sebsto/xcodeinstall/releases/download/v"
   sha256 cellar: :any_skip_relocation, arm64_monterey: "107a934f43d092c9ced521e088b45f4e4696c292b3b044b687587e74aeca3bb7"
