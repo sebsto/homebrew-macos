@@ -8,6 +8,12 @@ class Xcodeinstall < Formula
   url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.3.tar.gz"
   sha256 "752662290033f945c9bc6f9375f6964a4881844efd24a1beada560b312f5f9d7"
   license "Apache-2.0"
+  
+  bottle do
+    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v"
+      sha256 cellar: :any_skip_relocation, arm64_monterey: "107a934f43d092c9ced521e088b45f4e4696c292b3b044b687587e74aeca3bb7"
+      sha256 cellar: :any_skip_relocation, monterey: "107a934f43d092c9ced521e088b45f4e4696c292b3b044b687587e74aeca3bb7"
+  end
 
   def install
     system "./scripts/build_fat_binary.sh"
