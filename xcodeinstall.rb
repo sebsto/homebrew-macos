@@ -6,7 +6,7 @@ class Xcodeinstall < Formula
   desc "This is a command-line tool to download and install Apple's Xcode"
   homepage "https://github.com/sebsto/xcodeinstall"
   url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.6.tar.gz"
-  sha256 "4c21979d3c3292d3fe2e0d73c916e8cfb6e9ca5f1aa4745681a353e17b45b219"
+  sha256 "d33b1e1394b892725eeef81fdb6b697886f7341aee31ea547d81d9c3d373ebbe"
   license "Apache-2.0"
 
   # insert bottle definition here
