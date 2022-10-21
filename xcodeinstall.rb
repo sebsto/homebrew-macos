@@ -13,7 +13,7 @@ class Xcodeinstall < Formula
   bottle do
     root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.5"
     sha256 cellar: :any_skip_relocation, arm64_monterey: "22209e723a1c782c6ab90d86839ccb7c3822768d45850267f4bdc914bac67604"
-    sha256 cellar: :any_skip_relocation, monterey: "22209e723a1c782c6ab90d86839ccb7c3822768d45850267f4bdc914bac67604"
+    sha256 cellar: :any_skip_relocation, monterey:       "22209e723a1c782c6ab90d86839ccb7c3822768d45850267f4bdc914bac67604"
   end
 
   def install
