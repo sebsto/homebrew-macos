@@ -5,16 +5,11 @@
 class Xcodeinstall < Formula
   desc "This is a command-line tool to download and install Apple's Xcode"
   homepage "https://github.com/sebsto/xcodeinstall"
-  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.6.tar.gz"
-  sha256 "d33b1e1394b892725eeef81fdb6b697886f7341aee31ea547d81d9c3d373ebbe"
+  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.7.tar.gz"
+  sha256 "1436fb7864082e429275139102ce86d9f20480f376e4e60122c181efcdd2bcc8"
   license "Apache-2.0"
 
   # insert bottle definition here
-  bottle do
-    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.6"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "444b266b9b55dfebe8689bf92b64a427df0439c651110d1a9599dd094bfe7275"
-    sha256 cellar: :any_skip_relocation, monterey: "444b266b9b55dfebe8689bf92b64a427df0439c651110d1a9599dd094bfe7275"
-  end
 
   def install
     system "./scripts/build_fat_binary.sh"
