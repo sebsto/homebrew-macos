@@ -5,20 +5,11 @@
 class Xcodeinstall < Formula
   desc "This is a command-line tool to download and install Apple's Xcode"
   homepage "https://github.com/sebsto/xcodeinstall"
-  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.11.7.tar.gz"
-  sha256 "23bf9f9184c2ec8a8e71bb45a85be99476f879b68112bf1bc3d3946540ddd396"
+  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.12.0.tar.gz"
+  sha256 "efb4296ddd339ca917b1a91ec7ac251c479b1c0c5dbbb2860f65cbc99fd1e570"
   license "Apache-2.0"
 
   # insert bottle definition here
-  bottle do
-    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.11.7"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "a907d66579e31950b5e39e403da47aaa391bd0c83eb028d60bd98b2927afbe67"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "a907d66579e31950b5e39e403da47aaa391bd0c83eb028d60bd98b2927afbe67"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a907d66579e31950b5e39e403da47aaa391bd0c83eb028d60bd98b2927afbe67"
-    sha256 cellar: :any_skip_relocation, ventura: "a907d66579e31950b5e39e403da47aaa391bd0c83eb028d60bd98b2927afbe67"
-    sha256 cellar: :any_skip_relocation, sonoma: "a907d66579e31950b5e39e403da47aaa391bd0c83eb028d60bd98b2927afbe67"
-    sha256 cellar: :any_skip_relocation, sequoia: "a907d66579e31950b5e39e403da47aaa391bd0c83eb028d60bd98b2927afbe67"
-  end
 
   def install
     system "./scripts/deploy/build_fat_binary.sh"
