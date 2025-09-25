@@ -10,6 +10,15 @@ class Xcodeinstall < Formula
   license "Apache-2.0"
 
   # insert bottle definition here
+  bottle do
+    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.13.0"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "ba0c1aac6c4076920b487bfa53bc33324cbd5111a9169ea2dd7535f3056da6ad"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "ba0c1aac6c4076920b487bfa53bc33324cbd5111a9169ea2dd7535f3056da6ad"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "ba0c1aac6c4076920b487bfa53bc33324cbd5111a9169ea2dd7535f3056da6ad"
+    sha256 cellar: :any_skip_relocation, ventura: "ba0c1aac6c4076920b487bfa53bc33324cbd5111a9169ea2dd7535f3056da6ad"
+    sha256 cellar: :any_skip_relocation, sonoma: "ba0c1aac6c4076920b487bfa53bc33324cbd5111a9169ea2dd7535f3056da6ad"
+    sha256 cellar: :any_skip_relocation, sequoia: "ba0c1aac6c4076920b487bfa53bc33324cbd5111a9169ea2dd7535f3056da6ad"
+  end
 
   def install
     system "./scripts/deploy/build_fat_binary.sh"
