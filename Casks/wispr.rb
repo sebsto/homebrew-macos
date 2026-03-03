@@ -1,6 +1,6 @@
 cask "wispr" do
   version "1.0.0"
-  sha256 "d9beaaaa652aa1310c937e61bfb781dba6cf02e04e1e789823b5fb4905b91c88"
+  sha256 "22f082759976e807e21fdb65269439f575fdae79b8c86cb39043cdfee5ef67f6"
 
   url "https://github.com/sebsto/wispr/releases/download/v1.0.0/wispr-1.0.0.zip"
   name "Wispr"
