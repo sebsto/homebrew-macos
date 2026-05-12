@@ -1,20 +1,20 @@
 class Xcodeinstall < Formula
   desc "This is a command-line tool to download and install Apple's Xcode"
   homepage "https://github.com/sebsto/xcodeinstall"
-  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.21.0.tar.gz"
-  sha256 "42ecded5d65f493e5e362477e7fdfcc1be83ee9bc170bef69c580c88ca11b6d6"
+  url "https://github.com/sebsto/xcodeinstall/archive/refs/tags/v0.22.0.tar.gz"
+  sha256 "01a1958a2a58ec8f59c20dad4761ab85109e8f14afac1dee8b79d0ff943129e3"
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.21.0"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, arm64_sonoma: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, ventura: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, sonoma: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, sequoia: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
-    sha256 cellar: :any_skip_relocation, tahoe: "7c157d55eaa803b90f125bda63d10efbaa4c4d269b4d059a5462040b046d52d7"
+    root_url "https://github.com/sebsto/xcodeinstall/releases/download/v0.22.0"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, ventura: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, sonoma: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, sequoia: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
+    sha256 cellar: :any_skip_relocation, tahoe: "fe1d606add8f6d6f210091b91dfe0ea363f55e017b335ce9adf606574ae8f59c"
   end
 
   def install
