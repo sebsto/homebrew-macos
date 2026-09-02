@@ -1,8 +1,8 @@
 cask "wispr" do
-  version "1.15.0"
-  sha256 "1e25784122dad3abc617a7460b982b7cd21be744c4ac17497126720b6fd614bd"
+  version "1.16.0"
+  sha256 "df02bb49351eb0519ff115181575df8d5d73b52f27bff877ba46e60c58cf4edd"
 
-  url "https://github.com/sebsto/wispr/releases/download/v1.15.0/wispr-1.15.0.zip"
+  url "https://github.com/sebsto/wispr/releases/download/v1.16.0/wispr-1.16.0.zip"
   name "Wispr"
   desc "Local speech-to-text transcription powered by OpenAI Whisper"
   homepage "https://github.com/sebsto/wispr"
